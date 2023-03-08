@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Royal Palece</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #top-nav{
+            width: 100%;
+            height: 70px;
+            color: white;
+            background-color: coral;
+            text-align: center;
+        }
+        h1{
+            padding-top: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+        }
+        #input-custumer-data{
+            width: 100%;
+            height: 500px;
+            color: white;
+            background-color: rgb(238, 123, 81);
+            margin-top: 2px;
+            /* text-align: center; */
+        }
+        #input-custumer-data-heading{
+            width: 100%;
+            height: 50px;
+            color: white;
+            background-color: rgb(9, 154, 245);
+            text-align: center;
+        }
+        h2{
+            padding-top: 10px;
+        }
+        #input{
+            margin-top: 20px;
+        }
+        input{
+            width: 300px;
+        }
+        #lb1{
+            margin-right: 40px;
+            margin-left: 50px;
+        }
+        #lb2{
+            margin-right: 17px;
+            margin-left: 50px;
+        }
+        #lb3{
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+        #lb4{
+            margin-right: 8px;
+            margin-left: 50px;
+        }
+        #lb5{
+            margin-left: 50px;
+            margin-right: 30px;
+        }
+        #lb6{
+            margin-left: 50px;
+            margin-right: 55px;
+        }
+        #lb7{
+            margin-right: 145px;
+            margin-left: 50px;
+        }
+        #lb8{
+            margin-right: 118px;
+            margin-left: 50px;
+        }
+        #lb9{
+            margin-right: 130px;
+            margin-left: 50px;
+        }
+        #lb10{
+            margin-right: 8px;
+            margin-left: 50px;
+        }#lb11{
+            margin-right: 8px;
+            margin-left: 50px;
+        }
+        #Custumer-Name{
+            margin-left: 60px;
+        }
+        #Custumer-SurName{
+            margin-left: 62px;
+        }
+        #Custumer-Age{
+            margin-left: 64px;
+        }
+        #Custumer-Mobile-Number{
+            margin-left: 30px;
+        }
+        #Date{
+            margin-left: 202px;
+        }
+        #Time{
+            margin-left: 202px;
+        }
+
+        #second-main-contener{
+            width: 1300px;
+            height: 400px;
+            margin-top: 5px;
+            margin-left: 30px;
+            background-color: rgb(56, 173, 245);
+            padding-top: 50px;
+        }
+        #btn2{
+            padding-top: 30px;
+            margin-left: 50px;
+            width: 100%;
+            display: flex;
+        }
+        #submit{
+            width: 43%;
+            height: 35px;
+            letter-spacing: 2px;
+            color: white;
+            border-radius: 5px;
+            background-color: rgb(8, 180, 8);
+            cursor: pointer;
+            border-width: 2px;
+            font-size: 15px;
+        }
+        #submit:hover{
+            background-color: rgb(8, 180, 8);
+            box-shadow: 2px 2px 50px 2px white;
+        }
+        #reset{
+            margin-left: 50px;
+            width: 46%;
+            height: 35px;
+            letter-spacing: 2px;
+            color: white;
+            border-radius: 5px;
+            background-color: red;
+            cursor: pointer;
+            border-width: 2px;
+            font-size: 15px;
+        }
+        #reset:hover{
+            background-color: red;
+            box-shadow: 2px 2px 50px 2px white;
+        }
+        #Data-Table{
+            width: 100%;  
+            margin-top: 20px;     
+         }
+        #table{
+            width: 100%;
+            border: 1px solid black;
+            background-color: coral;
+            border-collapse: collapse;
+        }
+        #thead{
+            background-color: coral;
+            border: 1px solid black;
+            text-align: center;
+        }
+        th{
+            border: 1px solid black;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-left: none;
+            border-right: none;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: white;
+            font-weight: bold;
+        }
+        #tbody{
+            text-align: center;
+            background-color: white;
+            font-size: 15px;
+        }
+        tr{
+            border: 1px solid black;
+            border-left: none;
+            border-right: none;
+        }
+        .tddate{
+            padding-left: 5px;
+        }
+        td{
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="top-nav">
+        <b><h1>The Royal Palace</h1></b>
+    </div>
+    <div id="input-custumer-data">
+        <div id="input-custumer-data-heading">
+            <h2>Custumer Data</h2>
+        </div>
+            <div id="second-main-contener">
+                <span>
+                <label id="lb10">Date :</label>
+                <input type="date" id="Date">
+
+                <label id="lb5">Enter Custumer Aadhaar Card Number :</label>
+                <input type="text" id="Custumer-Aadhaar-Card-Number">
+                </span>
+                <br>
+                <br>
+                <span>
+                    <label id="lb11">Time :</label>
+                    <input type="time" id="Time">
+
+                    <label id="lb6">Enter Custumer Pan Card Number :</label>
+                    <input type="text" id="Custumer-Pan-Card-Number">
+                </span>
+                <br>
+                <br>
+                <span>
+                    <label id="lb1">Enter Custumer Name :</label>
+                    <input type="text" id="Custumer-Name">
+
+                    <label id="lb7">Room Booking Date :</label>
+                    <input type="date" id="Room-Booking-Date">
+                </span>
+                <br>
+                <br>
+                <span>
+                    <label id="lb2">Enter Custumer SurName :</label>
+                    <input type="text" id="Custumer-SurName">
+
+                    <label id="lb8">Enter Custumer Address :</label>
+                    <input type="address" id="Custumer-Address">
+                </span>
+                <br>
+                <br>
+                <span>
+                    <label id="lb3">Enter Custumer Age :</label>
+                    <input type="age" id="Custumer-Age">
+
+                    
+                </span>
+                <br>
+                <br>
+                <span>
+                    <label id="lb4">Enter Custumer Mubile Number :</label>
+                    <input type="text" id="Custumer-Mobile-Number">
+                </span>
+                <br>
+                <br>
+                <div id="btn2">
+                        <button class="btn" id="submit" onclick="addDataInTable()" type="submit">
+                            <b>SUBMIT</b>
+                        </button>
+                        <button class="btn" id="reset" type="reset" onclick="clearAll()">
+                            <b>RESET</b>              
+                        </button>
+                </div>
+            </div>
+    </div>
+
+    <div id="Data-Table">
+        <table id="table">
+            <thead id="thead">
+                <th>Date</th>
+                <th>Time</th>
+                <th>Custumer Name</th>
+                <th>Custumer SurName</th>
+                <th>Custumer Age</th>
+                <th>Custumer Mobile Number</th>
+                <th>Custumer Aadhaar Card Number</th>
+                <th>Custumer Pan Card Number</th>
+                <th>Room Booking Date</th>
+                <th>Custumer Address</th>
+
+            </thead>
+            <tbody id="tbody">
+                <!-- <tr id="tr1">
+                    <td class="tddate">3/5/2023</td>
+                    <td>12:14</td>
+                    <td>Khan Rizwan Amjad</td>
+                    <td>Khan</td>
+                    <td>18</td>
+                    <td>9011868894</td>
+                    <td>124xxxxxxx</td>
+                    <td>124xxxxxxx</td>
+                    <td>3/5/2023</td>
+                    <td>Shanti Nagar Bhiwandi</td>
+                </tr> -->
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+         function addDataInTable(){
+            let tbody = document.getElementById("tbody");
+            let creatnewRow = document.createElement('tr');
+            creatnewRow.id = "tr2";
+            tbody.appendChild(creatnewRow);
+            let tr2 = document.getElementById("tr2");
+            
+            let creatTd1 = document.createElement('td');
+            creatTd1.textContent = document.getElementById("Date").value;
+            tr2.appendChild(creatTd1);
+
+            let creatTd2 = document.createElement('td');
+            creatTd2.textContent = document.getElementById("Time").value;
+            tr2.appendChild(creatTd2);
+
+            let creatTd3 = document.createElement('td');
+            creatTd3.textContent = document.getElementById("Custumer-Name").value;
+            tr2.appendChild(creatTd3);
+
+            let creatTd4 = document.createElement('td');
+            creatTd4.textContent = document.getElementById("Custumer-SurName").value;
+            tr2.appendChild(creatTd4);
+
+            let creatTd5 = document.createElement('td');
+            creatTd5.textContent = document.getElementById("Custumer-Age").value;
+            tr2.appendChild(creatTd5);
+
+            let creatTd6 = document.createElement('td');
+            creatTd6.textContent = document.getElementById("Custumer-Mobile-Number").value;
+            tr2.appendChild(creatTd6);
+
+            let creatTd7 = document.createElement('td');
+            creatTd7.textContent = document.getElementById("Custumer-Aadhaar-Card-Number").value;
+            tr2.appendChild(creatTd7);
+
+            let creatTd8 = document.createElement('td');
+            creatTd8.textContent = document.getElementById("Custumer-Pan-Card-Number").value;
+            tr2.appendChild(creatTd8);
+
+            let creatTd9 = document.createElement('td');
+            creatTd9.textContent = document.getElementById("Room-Booking-Date").value;
+            tr2.appendChild(creatTd9);
+
+            let creatTd10 = document.createElement('td');
+            creatTd10.textContent = document.getElementById("Custumer-Address").value;
+            tr2.appendChild(creatTd10);
+
+            let creatbrtag = document.createElement("br");
+            creatnewRow.appendChild(creatbrtag);
+
+         }
+
+         function clearAll(){
+                
+            document.getElementById("Date").value = "";
+            document.getElementById("Time").value = "";
+            document.getElementById("Custumer-Name").value = "";
+            document.getElementById("Custumer-SurName").value = "";
+            document.getElementById("Custumer-Age").value = "";
+            document.getElementById("Custumer-Mobile-Number").value = "";
+            document.getElementById("Custumer-Aadhaar-Card-Number").value = "";
+            document.getElementById("Custumer-Pan-Card-Number").value = "";
+            document.getElementById("Room-Booking-Date").value = "";
+            document.getElementById("Custumer-Address").value = "";
+            
+
+        }
+        
+    </script>
+</body>
+</html>
